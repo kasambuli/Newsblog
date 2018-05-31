@@ -1,0 +1,38 @@
+{% load bootstrap4 %}{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title>Newc Clone | Welcome</title>
+
+    {% block styles %} {% bootstrap_css %} {% endblock %}
+    <!-- Plugins CSS -->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Anton|Bitter|Indie+Flower" rel="stylesheet">
+
+    <script src="https://unpkg.com/ionicons@4.0.0/dist/ionicons.js"></script>
+
+</head>
+
+<body>
+    {% include "navbar.html" %}{% block content %} {% endblock %} {% block scripts %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> {% bootstrap_javascript %} {% endblock %}
+    <!-- Global JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKMGgFp5OdpSKkQN2X5fd7LSLVPANFjy8"></script>
+
+
+</body>
+
+
+</html>
