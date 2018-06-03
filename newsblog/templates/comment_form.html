@@ -1,0 +1,13 @@
+ {%extends 'base.html'%}{% load bootstrap4 %} {% load static%} {% block content %} {% for user in users %} {% empty %}{{form.media}}
+<div class="text-center">
+    <h3 style="color:black;">
+        <strong>Post Comment</strong>
+    </h3>
+</div>
+
+<form action="{%url 'comment' %}" method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    <!--  -->
+    {% bootstrap_form comment_form layout='inline' %}
+    <input type="submit" class="btn btn-primary" value="Submit">
+</form>{% endfor %}{% endblock %}
